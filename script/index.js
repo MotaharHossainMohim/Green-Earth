@@ -38,7 +38,7 @@ const loadCategories = (categories) => {
     const li = document.createElement("li");
     li.textContent = cat.category_name;
     li.className =
-      "category-item cursor-pointer rounded-md px-4 py-3 text-sm font-medium text-[#4B5563] hover:bg-[#e6f5ea] hover:text-[#2F883B]";
+      "category-item cursor-pointer rounded-md px-4 py-3 text-sm font-medium text-[#4B5563] hover:bg-[#a4e7bf] hover:text-[#2F883B]";
     li.addEventListener("click", () => {
       setActiveCategory(li);
       filterPlants(cat.category_name);
