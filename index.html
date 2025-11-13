@@ -33,11 +33,11 @@
   <body>
     <!--Navbar -->
     <header
-      class="w-full bg-[#15803D] text-white flex items-center justify-between px-12 py-5 md:px-12 md:py-5 sm:flex sm:gap-3"
+      class="bg-[#15803D] text-white w-full md:px-12 md:py-5 sm:flex sm:gap-3 flex items-center justify-between px-12 py-5"
     >
       <h1 class="text-2xl font-semibold">Green Earth</h1>
 
-      <nav class="hidden md:flex">
+      <nav class="md:flex">
         <ul class="flex items-center space-x-6 text-sm">
           <li><a href="" class="hover:underline">About</a></li>
           <li><a href="" class="hover:underline">Gallery</a></li>
@@ -46,52 +46,11 @@
       </nav>
 
       <button
-        class="plant-button bg-[#FACC15] text-[#15803D] px-5 py-2 rounded-full font-semibold whitespace-nowrap hover:bg-[#FFA000] hidden md:inline-block"
+        class="plant-button bg-[#FACC15] text-[#15803D] px-5 py-2 rounded-full font-semibold whitespace-nowrap hover:bg-[#FFA000] md:inline-block"
       >
         Plant a Tree
       </button>
     </header>
-    <main class="min-h-screen">
-      <!-- Banner -->
-      <section
-        class="relative bg-[#CFF0DC] flex items-center justify-center text-center px-12 py-10 overflow-hidden min-h-[320px] sm:flex-col sm:px-5 "
-      >
-        <!-- left leaf -->
-        <img
-          src="assets/hero-leaf1.png"
-          alt="Leaf Left"
-          class="absolute top-0 left-0 w-[420px] max-w-[27vw] h-full pointer-events-none z-10 hidden sm:hidden md:block "
-        />
-
-        <div class=" max-w-2xl py-10">
-          <h1
-            class="font-bold text-4xl text-[#1F2937] mb-5 "
-          >
-            Plant a Tree, Grow a Future
-          </h1>
-          <p class=" text-[#1F2937] mb-8">
-            Join our mission to plant 1 million trees and make the Earth greener for future
-            generations.
-          </p>
-          <button
-            class="plant-button bg-[#FACC15] text-[#15803D] px-5 py-2 rounded-full font-semibold whitespace-nowrap hover:bg-[#FFA000] hidden md:inline-block"
-          >
-            Get Involved
-          </button>
-        </div>
-
-        <!-- right leaf -->
-        <img
-          src="assets/hero-leaf2.png"
-          alt="Leaf Right"
-          class="absolute top-0 right-0 w-[420px] max-w-[27vw] h-full pointer-events-none z-10 hidden sm:hidden md:block"
-        />
-      </section>
-      <section class="bg-[#F0FDF4]">
-
-      </section>
-
-
     <script src="script/index.js"></script>
   </body>
 </html>
