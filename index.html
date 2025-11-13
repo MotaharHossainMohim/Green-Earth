@@ -87,6 +87,78 @@
           class="absolute top-0 right-0 w-[420px] max-w-[27vw] h-full pointer-events-none z-10 hidden sm:hidden md:block"
         />
       </section>
+
+      <!-- Choose Your Trees -->
+      <section id="gallery" class="bg-[#F0FDF4] py-6 px-3 text-center ">
+        <h2 class="text-3xl font-semibold text-[#1F2937] mb-10">
+          Choose Your Trees
+        </h2>
+
+        <div
+          class="max-w-[1300px] mx-auto grid gap-4   "
+          style="grid-template-columns: 220px 1fr 250px"
+        >
+          <!-- Categories panel -->
+          <div class="px-2 py-1 ">
+            <h3 class="text-lg font-semibold text-[#1F2937] mb-4 text-left">
+              Categories
+            </h3>
+            <ul id="category-list" class="space-y-2 text-left"></ul>
+          </div>
+
+          <!-- Trees display -->
+          <div id="trees-display-area" class="relative min-h-[400px] w-full">
+            <!-- spinner overlay -->
+            <div
+              id="loading-spinner"
+              class="hidden absolute inset-0 bg-white/80 flex items-center justify-center z-50"
+            >
+              <div
+                class="w-[60px] h-[60px] rounded-full border-8 border-[#f3f3f3] border-t-8 border-t-[#15803D] animate-spin"
+              ></div>
+            </div>
+
+            <!-- cards container -->
+            <div
+              id="tree-cards-container"
+              class="grid gap-4"
+              style="grid-template-columns: repeat(3, 1fr)"
+            ></div>
+          </div>
+
+          <!-- Cart panel -->
+          <div
+            class="bg-white rounded-lg p-5 shadow-sm border border-[#E5E7EB] flex flex-col justify-between"
+          >
+            <h3 class="text-lg font-semibold text-[#1F2937] mb-4">Your Cart</h3>
+            <div id="cart-items" class="mb-4 min-h-[150px]"></div>
+            <div
+              id="cart-total"
+              class="text-right text-lg font-semibold text-[#1F2937]"
+            >
+              Total: ৳0
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal (hidden by default) -->
+      <div
+        id="plant-modal"
+        class="fixed inset-0 z-40 hidden bg-black/40"
+        style="display: none"
+      >
+        <div
+          class="max-w-xl mx-auto bg-white rounded-xl mt-24 p-8 relative shadow-2xl"
+        >
+          <button
+            class="close-button absolute top-3 right-4 text-2xl text-[#444] hover:text-black"
+          >
+            &times;
+          </button>
+          <div id="modal-details"></div>
+        </div>
+      </div>
       
       <!-- About Campaign -->
       <section id="" class="bg-[#F0FDF4] py-20 px-8 text-center ">
